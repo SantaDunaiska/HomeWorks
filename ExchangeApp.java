@@ -1,30 +1,33 @@
 import java.util.Scanner;
 public class ExchangeApp {
-	static int n;
-	
-	static double i = 0.90;
-	static double j = 1.12;
-	static Scanner userInfo = new Scanner(System.in);
+    private static double getConversion;
+
 	public static void main(String[] args) {
-		//declare local variables
-	Exchange ExchangeApp;
-	ExchangeApp = new Exchange();
-		//declare objects
+        //TODO:declare local variables
+    	double amount;
+    	double rate;
+    	
+//TODO:declare objects
+Scanner Info = new Scanner (System.in);
 
-	
-		//input
-		System.out.println("Please enter the amount you would like to exchange: " );
-		n = userInfo.nextInt();
-		ExchangeApp.getConvertionEUR();
-		ExchangeApp.getConvertionUSD();
- 
-		
-		//double ConvertionUSD = j * n;
-		//double ConvertionEUR = n * i;
-		
-		System.out.println("Your amount in EUR would be  EUR " + ExchangeApp.getConvertionEUR()*n);
-		System.out.println("Your amount in USD would be  USD " + ExchangeApp.getConvertionUSD()*n);
+        //TODO:input
+        System.out.println("\tPlease enter amount to be converted: ");
+        
+        //TODO:setMethod to put sc value
+        amount = Info.nextDouble();
+        
+        //TODO:setMethod to put sc value
+        System.out.println("\nPlease enter \nthe conversion rate: ");
+       //TODO:setMethod to put sc value
+        rate = Info.nextDouble();
+        
+Exchange ExchangeApp;
+ExchangeApp = new Exchange();
+        //TODO:setMethod
+        //TODO:process
+Exchange.getConversion(getConversion);
 
-	}
-
-}
+        //TODO:output
+       System.out.println(+ amount + " at a rate of " + rate + " is " + getConversion);
+    }//end main
+}//end class

@@ -1,56 +1,29 @@
-
 public class Exchange {
+    //TODO: declare data members- amount, rate, conversion
+	private static double amount;
+	private static int rate;
+	private static double conversion;
 
-	//declare data members amount, rate, conversion
-	
-	String EUR;
-	String USD;
-	private int EURamount;
-	private int USDamount;
-	private double ConvertionEUR;
-	private double ConvertionUSD;
-	
-	private double i = 1.12;
-	private double j = 0.90;
-	private double aEUR = 1.0;
-	private double aUSD = 1.0;
-	
-public void RateCalculations(double ConvertionEUR, double ConvertionUSD){	
-	
-	//set methods	
-ConvertionEUR = aEUR *= i;
-ConvertionUSD = aUSD *= j;}
-	
-	//constructor
-	public Exchange() {
-	}
-	//constructor - amount, rate 
-	public void setAmount(int EURamount, int USDamount)  {
-	this.EURamount = EURamount;
-	this.USDamount = USDamount;}
-	
+    //TODO:constructor
+public Exchange () {}
+	//TODO:constructor - amount, rate
+public void setInt(int amount, int rate){
+Exchange.amount = amount;
+Exchange.rate = rate;}
 
-
-	public double getConvertionEUR() {
-		return ConvertionEUR;
-	}
-
-	public void setConvertionEUR(double convertionEUR) {
-		ConvertionEUR = convertionEUR;
-	}
-
-	public double getConvertionUSD() {
-		return ConvertionUSD;
-	}
-
-	public void setConvertionUSD(double convertionUSD) {
-		ConvertionUSD = convertionUSD;
-	}
-
-
-	}
-	
-	
-
-
+	//TODO:set methods
+	//TODO:calculation = conversion
+static void calculationMethod() {
+	setConversion(amount * rate);
+}
+public static double getConversion(double d) {
+	return conversion;
+}
+public static void setConversion(double conversion) {
+	Exchange.conversion = conversion;
+}
+    
+   
+    //TODO:get method return conversion
+}
 
