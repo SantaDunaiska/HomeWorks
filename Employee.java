@@ -11,22 +11,17 @@ private	String company;
 private	double salary;
 	
 //constructor with 4 params, except id and department
-	public Employee(String department, String name, String position, String company, double salary) {
-		this.department = department;
+	public Employee( String name, String position, String company, double salary) {
 		this.name = name;
 		this.position = position;
 		this.company = company;
 		this.salary = salary;
-}
-	
-	public Employee(String string, String string2, String string3, int i) {
-		// TODO Auto-generated constructor stub
 	}
-
+	
 	//inside the constructor generate a random number between 1 and 100 as ID number
 	public static double getRandomNumber(){
-	    double id = Math.random();
-	    return id;    
+	    double ID= Math.random();
+	    return ID;   
 }
 
 

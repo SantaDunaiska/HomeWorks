@@ -1,8 +1,6 @@
 import java.util.Random;
 public class Company {
 
-	private static final String department = null;
-
 	public static void main(String[] args) {
 		
 		
